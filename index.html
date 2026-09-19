@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibujang Ngoding | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">&lt;Sibujang/&gt;</span>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Sibujang<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#services" class="nav-link">Jasa</a></li>
+                <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/6289516245487" target="_blank" class="btn btn-primary btn-sm">
+                    <i class="fab fa-whatsapp"></i> Chat
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Tersedia untuk proyek baru
+            </div>
+            <h1 class="hero-title">
+                <span class="greeting">Halo, saya</span>
+                <span class="name" id="typedName"></span>
+            </h1>
+            <p class="hero-subtitle" id="typedSubtitle"></p>
+            <p class="hero-description">
+                Mengubah ide menjadi solusi digital yang inovatif dan berkualitas tinggi.
+                Fokus pada pengalaman pengguna dan performa optimal.
+            </p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Lihat Portofolio
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Hubungi Saya
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Gulir ke bawah</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;tentang /&gt;</span>
+                <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="images/myphoto.jpg" alt="Sibujang" class="about-img">
+                        <div class="about-image-decoration"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Tahun<br>Pengalaman</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-subtitle">Murid</h3>
+                    <p class="about-text">
+                        Saya adalah seorang murid dari SMK AK Nusa Bangsa yang passionate dalam menciptakan solusi digital.
+                        Dengan pengalaman dalam pengembangan web dan mobile, saya dapat membantu klien
+                        mewujudkan ide mereka menjadi produk digital yang fungsional dan menarik.
+                    </p>
+                    <p class="about-text">
+                        Saya percaya bahwa desain yang baik harus berjalan seiring dengan kode yang bersih.
+                        Setiap proyek yang saya kerjakan dikerjakan dengan penuh dedikasi dan perhatian
+                        terhadap detail.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Nama</span>
+                            <span class="detail-value">Sibujang Ngoding</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Lokasi</span>
+                            <span class="detail-value">Indonesia</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">hello@sibujang.dev</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Status</span>
+                            <span class="detail-value status-available">
+                                <span class="status-dot"></span> Tersedia
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <h4 class="skills-title">Tech Stack</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                            <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                            <span class="skill-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;jasa /&gt;</span>
+                <h2 class="section-title">Layanan <span class="gradient-text">Saya</span></h2>
+                <p class="section-desc">Saya menyediakan berbagai layanan pengembangan digital untuk membantu bisnis Anda berkembang</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-desc">
+                        Pengembangan website profesional dengan teknologi modern. Dari landing page hingga
+                        web application kompleks.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> SEO Optimized</li>
+                        <li><i class="fas fa-check"></i> Fast Loading</li>
+                        <li><i class="fas fa-check"></i> Clean Code</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">Mulai dari</span>
+                        <span class="price-value">Rp 2.000.000</span>
+                    </div>
+                </div>
+
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-badge">Populer</div>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-desc">
+                        Pembuatan aplikasi mobile untuk Android dan iOS dengan UI/UX yang menarik
+                        dan performa tinggi.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Cross Platform</li>
+                        <li><i class="fas fa-check"></i> Push Notification</li>
+                        <li><i class="fas fa-check"></i> API Integration</li>
+                        <li><i class="fas fa-check"></i> App Store Ready</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">Mulai dari</span>
+                        <span class="price-value">Rp 5.000.000</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-desc">
+                        Desain antarmuka yang intuitif dan pengalaman pengguna yang memukau
+                        untuk produk digital Anda.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wireframing</li>
+                        <li><i class="fas fa-check"></i> Prototyping</li>
+                        <li><i class="fas fa-check"></i> Design System</li>
+                        <li><i class="fas fa-check"></i> User Research</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">Mulai dari</span>
+                        <span class="price-value">Rp 1.500.000</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">E-Commerce Solution</h3>
+                    <p class="service-desc">
+                        Solusi toko online lengkap dengan sistem pembayaran, manajemen produk,
+                        dan dashboard admin.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Payment Gateway</li>
+                        <li><i class="fas fa-check"></i> Inventory System</li>
+                        <li><i class="fas fa-check"></i> Admin Dashboard</li>
+                        <li><i class="fas fa-check"></i> Analytics</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">Mulai dari</span>
+                        <span class="price-value">Rp 8.000.000</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="service-title">Backend & API</h3>
+                    <p class="service-desc">
+                        Pengembangan backend robust dan RESTful API yang aman, scalable,
+                        dan well-documented.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> RESTful API</li>
+                        <li><i class="fas fa-check"></i> Database Design</li>
+                        <li><i class="fas fa-check"></i> Authentication</li>
+                        <li><i class="fas fa-check"></i> Cloud Deploy</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">Mulai dari</span>
+                        <span class="price-value">Rp 3.000.000</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">SEO & Digital Marketing</h3>
+                    <p class="service-desc">
+                        Optimasi mesin pencari dan strategi digital marketing untuk meningkatkan
+                        visibilitas bisnis Anda.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> SEO Audit</li>
+                        <li><i class="fas fa-check"></i> Keyword Research</li>
+                        <li><i class="fas fa-check"></i> Content Strategy</li>
+                        <li><i class="fas fa-check"></i> Performance Report</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">Mulai dari</span>
+                        <span class="price-value">Rp 1.000.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;portofolio /&gt;</span>
+                <h2 class="section-title">Proyek <span class="gradient-text">Terbaru</span></h2>
+                <p class="section-desc">Beberapa proyek yang pernah saya kerjakan</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3 class="portfolio-title">Dashboard Analytics</h3>
+                        <p class="portfolio-desc">Dashboard analitik real-time dengan visualisasi data interaktif</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Midtrans</span>
+                        </div>
+                        <h3 class="portfolio-title">Toko Online Fashion</h3>
+                        <p class="portfolio-desc">Platform e-commerce fashion dengan payment gateway Midtrans</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Dart</span>
+                        </div>
+                        <h3 class="portfolio-title">Aplikasi POS</h3>
+                        <p class="portfolio-desc">Aplikasi point of sale untuk UMKM dengan fitur inventory & laporan</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Case Study">
+                                    <i class="fas fa-book"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <h3 class="portfolio-title">Redesign Banking App</h3>
+                        <p class="portfolio-desc">Redesign UI/UX aplikasi perbankan dengan pendekatan modern</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">CodeIgniter</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <h3 class="portfolio-title">Sistem Akademik</h3>
+                        <p class="portfolio-desc">Sistem informasi akademik untuk pengelolaan data siswa & nilai</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-btn" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <h3 class="portfolio-title">Food Delivery App</h3>
+                        <p class="portfolio-desc">Platform pemesanan makanan online dengan real-time tracking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;proses /&gt;</span>
+                <h2 class="section-title">Cara Kerja <span class="gradient-text">Saya</span></h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Konsultasi</h3>
+                    <p>Diskusi mendalam tentang kebutuhan, target, dan visi proyek Anda</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3>Perencanaan</h3>
+                    <p>Membuat wireframe, prototipe, dan rencana pengembangan yang detail</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Pengembangan</h3>
+                    <p>Proses coding dengan standar best practice dan regular update</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Launch & Support</h3>
+                    <p>Deployment, testing, dan support pasca-peluncuran</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;kontak /&gt;</span>
+                <h2 class="section-title">Hubungi <span class="gradient-text">Saya</span></h2>
+                <p class="section-desc">Ada proyek yang ingin dikerjakan? Mari diskusi!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@sibujang.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Saya</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/sibujang" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/sibujang" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://instagram.com/polisibulantsabit" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/sibujang" target="_blank" class="social-link" title="Twitter/X">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://youtube.com/" target="_blank" class="social-link" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://tiktok.com/@rizzorangecounty9" target="_blank" class="social-link" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" placeholder="Perihal pesan Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Layanan yang Diminati</label>
+                        <select id="service" name="service">
+                            <option value="">Pilih layanan</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile App Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="ecommerce">E-Commerce Solution</option>
+                            <option value="backend">Backend & API</option>
+                            <option value="seo">SEO & Digital Marketing</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Pilih range budget</option>
+                            <option value="< 2jt">Di bawah Rp 2.000.000</option>
+                            <option value="2jt-5jt">Rp 2.000.000 - 5.000.000</option>
+                            <option value="5jt-10jt">Rp 5.000.000 - 10.000.000</option>
+                            <option value="10jt-25jt">Rp 10.000.000 - 25.000.000</option>
+                            <option value="> 25jt">Di atas Rp 25.000.000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyek Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>Sibujang<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Full Stack Developer & UI/UX Designer yang passionate dalam menciptakan solusi digital inovatif.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/sibujang" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sibujang" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com/polisibulantsabit" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/sibujang" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://youtube.com/@sibujang" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#portfolio">Portofolio</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile App</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">E-Commerce</a></li>
+                        <li><a href="#services">SEO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><a href="mailto:hello@sibujang.dev"><i class="fas fa-envelope"></i> hello@sibujang.dev</a></li>
+                        <li><a href="https://wa.me/6289516245487" target="_blank"><i class="fab fa-whatsapp"></i> +62 895-1624-5487</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Indonesia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sibujang Ngoding. All rights reserved.</p>
+                <p>Dibuat dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> menggunakan HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6289516245487?text=Halo%20Sibujang!%20Saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" class="whatsapp-float" id="whatsappFloat" title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat Saya!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" title="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="projectModal">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
