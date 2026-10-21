@@ -257,16 +257,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show success feedback
         const btn = contactForm.querySelector('button[type="submit"]');
         const originalText = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check"></i> Pesan Terkirim!';
-        btn.style.background = '#25d366';
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
+        btn.style.background = '#ffffff';
         btn.disabled = true;
 
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.style.background = '';
-            btn.disabled = false;
-            contactForm.reset();
-        }, 3000);
+        const finishFeedback = (label, background) => {
+            btn.innerHTML = label;
+            btn.style.background = background;
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+                contactForm.reset();
+            }, 3000);
+        };
+
+        const payload = { name, email, subject, service, budget, message };
+        const save = typeof window.saveContact === 'function' ? window.saveContact(payload) : Promise.resolve('skipped');
+        Promise.resolve(save).then((result) => {
+            if (result === 'error') {
+                finishFeedback('<i class="fas fa-exclamation-triangle"></i> Gagal simpan data!', '#e74c3c');
+            } else {
+                finishFeedback('<i class="fas fa-check"></i> Pesan Terkirim!', '#ffffff');
+            }
+        }).catch(() => {
+            finishFeedback('<i class="fas fa-check"></i> Pesan Terkirim!', '#ffffff');
+        });
     });
 
     // ===================================
@@ -315,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             modalContent.innerHTML = `
                 <div style="text-align: center; margin-bottom: 24px;">
-                    <div style="width: 100%; height: 200px; background: var(--gradient-1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: rgba(255,255,255,0.8);">
+                    <div style="width: 100%; height: 200px; background: var(--gradient-placeholder); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: rgba(255,255,255,0.8);">
                         ${placeholder}
                     </div>
                 </div>
@@ -390,6 +406,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===================================
     // INITIALIZE
     // ===================================
-    console.log('%c🚀 Portfolio by Sibujang Ngoding', 'color: #6c5ce7; font-size: 16px; font-weight: bold;');
-    console.log('%cBuilt with HTML, CSS & JavaScript', 'color: #00cec9; font-size: 12px;');
+    console.log('%c🚀 Portfolio by Sibujang Ngoding', 'color: #ffffff; font-size: 16px; font-weight: bold;');
+    console.log('%cBuilt with HTML, CSS & JavaScript', 'color: #d6d6d6; font-size: 12px;');
 });

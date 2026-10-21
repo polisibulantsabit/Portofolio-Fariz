@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sibujang Ngoding | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lanyard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -27,7 +28,6 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Beranda</a></li>
                 <li><a href="#about" class="nav-link">Tentang</a></li>
-                <li><a href="#services" class="nav-link">Jasa</a></li>
                 <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
                 <li><a href="#contact" class="nav-link">Kontak</a></li>
             </ul>
@@ -58,9 +58,6 @@
             </div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span> Tersedia untuk proyek baru
-            </div>
             <h1 class="hero-title">
                 <span class="greeting">Halo, saya</span>
                 <span class="name" id="typedName"></span>
@@ -96,10 +93,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image-wrapper">
-                    <div class="about-image">
-                        <img src="images/myphoto.jpg" alt="Sibujang" class="about-img">
-                        <div class="about-image-decoration"></div>
-                    </div>
+                    <div class="about-image" id="aboutLanyard"></div>
                     <div class="experience-badge">
                         <span class="exp-number">3+</span>
                         <span class="exp-text">Tahun<br>Pengalaman</span>
@@ -157,145 +151,6 @@
                     <a href="#" class="btn btn-primary">
                         <i class="fas fa-download"></i> Download CV
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">&lt;jasa /&gt;</span>
-                <h2 class="section-title">Layanan <span class="gradient-text">Saya</span></h2>
-                <p class="section-desc">Saya menyediakan berbagai layanan pengembangan digital untuk membantu bisnis Anda berkembang</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-desc">
-                        Pengembangan website profesional dengan teknologi modern. Dari landing page hingga
-                        web application kompleks.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Responsive Design</li>
-                        <li><i class="fas fa-check"></i> SEO Optimized</li>
-                        <li><i class="fas fa-check"></i> Fast Loading</li>
-                        <li><i class="fas fa-check"></i> Clean Code</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price-from">Mulai dari</span>
-                        <span class="price-value">Rp 2.000.000</span>
-                    </div>
-                </div>
-
-                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-badge">Populer</div>
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="service-title">Mobile App Development</h3>
-                    <p class="service-desc">
-                        Pembuatan aplikasi mobile untuk Android dan iOS dengan UI/UX yang menarik
-                        dan performa tinggi.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Cross Platform</li>
-                        <li><i class="fas fa-check"></i> Push Notification</li>
-                        <li><i class="fas fa-check"></i> API Integration</li>
-                        <li><i class="fas fa-check"></i> App Store Ready</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price-from">Mulai dari</span>
-                        <span class="price-value">Rp 5.000.000</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3 class="service-title">UI/UX Design</h3>
-                    <p class="service-desc">
-                        Desain antarmuka yang intuitif dan pengalaman pengguna yang memukau
-                        untuk produk digital Anda.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Wireframing</li>
-                        <li><i class="fas fa-check"></i> Prototyping</li>
-                        <li><i class="fas fa-check"></i> Design System</li>
-                        <li><i class="fas fa-check"></i> User Research</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price-from">Mulai dari</span>
-                        <span class="price-value">Rp 1.500.000</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3 class="service-title">E-Commerce Solution</h3>
-                    <p class="service-desc">
-                        Solusi toko online lengkap dengan sistem pembayaran, manajemen produk,
-                        dan dashboard admin.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Payment Gateway</li>
-                        <li><i class="fas fa-check"></i> Inventory System</li>
-                        <li><i class="fas fa-check"></i> Admin Dashboard</li>
-                        <li><i class="fas fa-check"></i> Analytics</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price-from">Mulai dari</span>
-                        <span class="price-value">Rp 8.000.000</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="service-title">Backend & API</h3>
-                    <p class="service-desc">
-                        Pengembangan backend robust dan RESTful API yang aman, scalable,
-                        dan well-documented.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> RESTful API</li>
-                        <li><i class="fas fa-check"></i> Database Design</li>
-                        <li><i class="fas fa-check"></i> Authentication</li>
-                        <li><i class="fas fa-check"></i> Cloud Deploy</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price-from">Mulai dari</span>
-                        <span class="price-value">Rp 3.000.000</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="service-title">SEO & Digital Marketing</h3>
-                    <p class="service-desc">
-                        Optimasi mesin pencari dan strategi digital marketing untuk meningkatkan
-                        visibilitas bisnis Anda.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> SEO Audit</li>
-                        <li><i class="fas fa-check"></i> Keyword Research</li>
-                        <li><i class="fas fa-check"></i> Content Strategy</li>
-                        <li><i class="fas fa-check"></i> Performance Report</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price-from">Mulai dari</span>
-                        <span class="price-value">Rp 1.000.000</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -654,19 +509,8 @@
                     <ul>
                         <li><a href="#home">Beranda</a></li>
                         <li><a href="#about">Tentang</a></li>
-                        <li><a href="#services">Layanan</a></li>
                         <li><a href="#portfolio">Portofolio</a></li>
                         <li><a href="#contact">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Layanan</h4>
-                    <ul>
-                        <li><a href="#services">Web Development</a></li>
-                        <li><a href="#services">Mobile App</a></li>
-                        <li><a href="#services">UI/UX Design</a></li>
-                        <li><a href="#services">E-Commerce</a></li>
-                        <li><a href="#services">SEO</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -680,7 +524,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Sibujang Ngoding. All rights reserved.</p>
-                <p>Dibuat dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> menggunakan HTML, CSS & JavaScript</p>
+                <p>Dibuat dengan <i class="fas fa-heart" style="color: #ffffff;"></i> menggunakan HTML, CSS & JavaScript</p>
             </div>
         </div>
     </footer>
@@ -704,6 +548,36 @@
         </div>
     </div>
 
+    <script src="js/vendor/supabase.js"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/supabase-contact.js"></script>
     <script src="js/main.js"></script>
+    <script type="module">
+        import { initLanyard } from './js/lanyard.js';
+
+        initLanyard(document.getElementById('aboutLanyard'), {
+            frontImage: 'images/myphoto.jpg',
+            imageFit: 'cover',
+            cardColor: '#ffffff',
+            orientation: 'portrait',
+            finish: 'glossy',
+            cornerRadius: 0.3,
+            size: 0.6,
+            anchor: 'center',
+            strapLength: 0.5,
+            strapColor: '#111111',
+            strapWidth: 0.65,
+            strapText: 'Cihuy',
+            strapTextFont: '"Playfair Display", "Cormorant Garamond", Georgia, serif',
+            strapTextColor: '#ffffff',
+            metal: 'silver',
+            gravity: 1,
+            damping: 0.5,
+            elasticity: 0.5,
+            breeze: 0.5,
+            interactive: true,
+            intro: true
+        });
+    </script>
 </body>
 </html>
